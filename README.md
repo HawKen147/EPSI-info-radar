@@ -1,2 +1,2 @@
 # EPSI-info-radar
- Script pour récuperer les parmaètres des radars EPSI
+ Script pour récuperer les paramètres des radars EPSI
