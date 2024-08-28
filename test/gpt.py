@@ -1,3 +1,5 @@
-test = ["status-ok.png"]
+resultat=["192.168.0.1","1.2.3","65","mode_1"]
 
-print (test[-1] == "status-ok.png")
+resultats = []
+resultats.append(resultat)
+print(resultats)

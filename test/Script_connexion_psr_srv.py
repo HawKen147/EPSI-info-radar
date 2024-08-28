@@ -6,8 +6,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
-
-
 def main():
     login = input("Entrer le login pour se connecter aux radars : ")
     password = getpass("Entrer le mot de passe pour se connecter aux radars : ")
@@ -49,16 +47,7 @@ def connection_au_radar(ip_radar, login, password):
         resultat_http = connection_http(ip_radar, login, password)
         if resultat_http == False :
             return -1
-        elif resultat_http == 1 :
-            print("Warning, led de couleur Orange")
-            return 1
-        elif resultat_http == 0 :
-            print("OK, led de couleur Verte")
-            return 0
-        else :
-            print("Critique, Led de couleur Rouge")
-            return -1
-    elif resultat_https == 1 :
+    if resultat_https == 1 :
             print("Warning, led de couleur Orange")
             return 1
     elif resultat_https == 0 :
