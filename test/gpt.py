@@ -1,6 +1,9 @@
-maListe = [0,1,2,3,4,5,6]
-print (maListe)
-elementSupprime = maListe.pop(2)
-maListe.append(elementSupprime)
-print (maListe)
+import os
+import os.path
 
+chemin = os.path.join(os.getcwd(), 'geckodriver.exe')
+print(os.path.isfile(chemin))
+print(chemin)
+
+for i in range(3) :
+    print(i)
