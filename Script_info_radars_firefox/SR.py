@@ -35,5 +35,5 @@ def recupere_mode_frequence_SR(driver):
         print(f"#######################################################\nVoici la frequence du channel : {frequence_channel_SR}")
         return frequence_channel_SR
     except Exception as e :
-        print(f"Impossible de récuperer le chacanalnnel de fréquence : {e}")
+        print(f"Impossible de récuperer le channel de fréquence : {e}")
         return "Erreur"

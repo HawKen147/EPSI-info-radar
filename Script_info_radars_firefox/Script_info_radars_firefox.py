@@ -40,9 +40,6 @@ def get_info():
     login = input("Entrer le login pour se connecter aux radars : ")
     password = getpass("Entrer le mot de passe pour se connecter aux radars : ")
     ip_radars = input("Entrer la plage d'adresse ip (192.168.0.1 192.168.0.25) : ")
-    login = "admin"
-    password = "#pw4RTE!"
-    ip_radars = "192.168.0.39 192.168.0.41"
     return login, password, ip_radars
 
 #Fonctionne seulement pour les réseaux en /24

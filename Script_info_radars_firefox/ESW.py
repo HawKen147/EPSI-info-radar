@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 def recupere_mode_frequence_ESW(driver):
     try:
         frequence_channel  = driver.find_element(By.XPATH, "//div[@id='mat-select-value-1']//span[contains(@class, 'mat-select-value-text')]//span").text
-        print(f"#######################################################\n Voici la frequence du channel : {frequence_channel}")
+        print(f"#######################################################\nVoici la frequence du channel : {frequence_channel}")
         return frequence_channel
     except Exception as e :
         print(f"Impossible de récuperer le canal de fréquence : {e}")
@@ -66,7 +66,6 @@ def recupere_numero_serie_https(driver):
 #Sinon retourne une erreur
 def recupere_distance_https(driver):
     try :
-        #Récupere le channel du radar
         # Accès à l'élément input
         parametre_distance = WebDriverWait(driver, 10).until(
             EC.visibility_of_element_located((By.XPATH, "//input[@formcontrolname='maxOperationalRange']"))
@@ -87,6 +86,9 @@ def recupere_distance_https(driver):
 #Sinon retourne une erreur
 def recupere_mode_channel_https(driver):
         try:
+            WebDriverWait(driver, 10).until(
+            EC.visibility_of_element_located((By.ID, "mat-button-toggle-1-button"))
+            )
             for i in range(1,5,1):
                 bouton = driver.find_elements(By.ID, f"mat-button-toggle-{i}-button")
                 if bouton[0].get_attribute('aria-pressed') == 'true':

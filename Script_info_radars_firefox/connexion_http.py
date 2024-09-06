@@ -49,10 +49,8 @@ def recupere_info_radar_http(driver, login, password, temp_tab, tab_resultat):
             temp_tab.append(SR.recupere_ouverture_max(driver))
             temp_tab.append("Non disponible")
         else :
-            temp_tab.append(ESW.recupere_mode_channel_http(driver))         #Fonction qui récupere le mode du radar
-            temp_tab.append("Non disponible")                                                                                      #Les PSR-200 et PSR-500 n'ont pas ses fonctionnalitées
-            for i in range(5):
-                temp_tab.append("non disponible")
+            for i in range(5):          #Les PSR-200 et PSR-500 n'ont pas ses fonctionnalitées...
+                temp_tab.append("Non disponible")
         tab_resultat.append(temp_tab)
         driver.quit()       #Ferme le navigateur
         return tab_resultat
