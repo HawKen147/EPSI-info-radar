@@ -2,7 +2,7 @@ import sys
 from cx_Freeze import setup, Executable
 
 # Spécifiez le script que vous souhaitez transformer en exécutable
-script_name = "Script_info_radars.py"
+script_name = "Script_info_radars_firefox.py"
 
 # Options pour cx_Freeze
 build_exe_options = {
