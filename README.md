@@ -10,13 +10,11 @@ Si firefox n'est pas installer le script ne marchera pas, et renverra une erreur
 La deuxième étape consiste a lancé le script. Rendez vous dans le répertoire ou le script a été installé, puis lancer le depuis la console (cmd). Le script va démarrer en vous demandant de rentrer le login, le mot de passe et la plage d'adresse ip. La plage d'adresse ip doit être comme cela IP_debut IP_fin : 
 - 192.168.0.1 192.168.0.31
 
-> [!TIP]
-> Le script fonctionne aussi pour récuperer les informations d'un seul radar ! Il suffira de rentrer l'IP du radar sans renseigner l'IP_fin
-> - 192.168.0.25
-
 Si il y'a une erreur lorsque vous rentrez les informations, il ne sera pas possible de revenir en arrière, il faudra arrêter le script (crtl + c) et le relancer.
 Une fois le script lancé il s'éxecutera, lorsqu'il a finit de récupérer les informations des radars, elles seront écritent dans le fichiers Excel.
 
+> [!TIP]
+> Le script fonctionne aussi pour récuperer les informations d'un seul radar ! Il suffira de rentrer l'IP du radar sans renseigner l'IP_fin
 
 ## Les informations que le script récupère (V 1.0)
 
